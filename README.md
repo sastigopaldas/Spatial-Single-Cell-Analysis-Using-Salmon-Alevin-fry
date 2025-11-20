@@ -229,7 +229,7 @@ wrap_plots(plot1, plot2)
 ggsave("qc_vln_spatial.png", wrap_plots(plot1, plot2),
        width = 10, height = 6, dpi = 300)
 ```
-![Workflow diagram](images/qc_vln_spatial.png)
+![Workflow diagram](Images/qc_vln_spatial.png)
 
 ### Hpca / Ttr SpatialFeaturePlot
 ```
@@ -244,7 +244,7 @@ ggsave("Hpca_Ttr_spatial.png", p_gene,
        width = 8, height = 4, dpi = 300)
 ```
 
-![Workflow diagram](images/Hpca_Ttr_spatial.png)
+![Workflow diagram](Images/Hpca_Ttr_spatial.png)
 ### PCA, Neighbors, Clustering, UMAP
 ```
 brain <- RunPCA(brain, assay = "SCT", verbose = FALSE)
@@ -269,7 +269,7 @@ ggsave("UMAP_and_spatial.png", p_umap,
        width = 10, height = 5, dpi = 300)
 ```
 
-![Workflow diagram](images/UMAP_and_spatial.png)
+![Workflow diagram](Images/UMAP_and_spatial.png)
 ### Highlight selected clusters on Spatial plot
 ```
 p_highlight <- SpatialDimPlot(
@@ -285,4 +285,4 @@ p_highlight <- SpatialDimPlot(
 ggsave("highlight_clusters.png", p_highlight,
        width = 10, height = 6, dpi = 300)
 ```
-![Workflow diagram](images/highlight_clusters.png)
+![Workflow diagram](Images/highlight_clusters.png)
